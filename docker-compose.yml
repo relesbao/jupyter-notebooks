@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    image: jupyter/tensorflow-notebook
+    volumes:
+      - ".:/var/www/"
+    ports:
+      - "8888:8888"
+    working_dir: /var/www
